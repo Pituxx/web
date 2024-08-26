@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>Digisales</title>
+        <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    </head>
+    <body>
+
+        <header class="hero">
+            <nav class="nav container">
+                <div class="logodigi">
+                    <img
+                        src="images/LogoDigi.png"
+                        alt="Logo de la empresa"
+                        style="height: 50px; margin-right: 1px;">
+                        <p>Distribuidor autorizado Claro</p>
+
+                    <ul class="nav_link nav_link--menu">
+                        <li class="nav_items">
+                            <a href="#" class="nav_links">Inicio</a>
+                        </li>
+                        <li class="nav_items">
+                            <a href="postulaciones.html" class="nav_links">Trabaja con nosotros</a>
+                        </li>
+
+                        <li class="nav_items">
+                            <a href="AcademiaDigi.html" class="nav_links">Academia</a>
+                        </li>
+
+                        <li class="nav_items">
+                            <a href="tel:+56958595676" class="call-btn">Llamar</a>
+                        </li>
+
+                        <img src="./images/close.svg" class="nav_close">
+                    
+                    </ul>
+
+                    <div class="nav_menu">
+                        <img src="images/menu.svg" class="nav_img">
+                    </div>
+
+                </div>
+            </nav>
+        <section class="hero_container container">
+            <h1 class="hero-title">Contrata con nostros</h1>
+            <p class="hero_paragraph">Elige nuestros mejores servicios y vive en grande</p>
+            <button class="navigate-btn cta__best" data-section="section2">Contrata ya!</button>
+        </section>
+    </header>
+
+    <main>
+        <div class="contenedor">
+            <section class="container about">
+                <h2 class="subtitle">¿Que servicios ofrecemos?</h2>
+                <p class="about__paragraph">Somos los mejores del mercado y estamos dispuestos a
+                    entregarte el mejor servicio</p>
+
+                <div class="about__main">
+                    <article class="about__icons">
+                        <img src="./images/ClaroHogarOf.jpg" class="about__ofertas">
+                        <h3 class="about__title">Claro Hogar...Donde encontraras los mejores precios para tu hogar</h3>
+                        <p class="about__paragraph">Contrata ya! y aprovecha los descuentos que tenemos para ti</p>
+                    </article>
+
+                    <article class="about__icons">
+                        <img src="./images/ClaroMovil.png" class="about__ofertas">
+                        <h3 class="about__title">Claro Movil</h3>
+                        <p class="about__paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Sunt vero non libero praesentium repudiandae rem nisi illum alias quos ea!</p>
+                    </article>
+
+                </div>
+            </section>
+        </div>
+            <section id="section2" class="price">
+                <h2 class="subtitle__price">Obtén los mejores planes, con toda la cobertura</h2>
+                
+                <div class="price__table">
+                    <div class="price__element">
+                        <img class="about__ofertas" src="images/PlanI+TV.jpeg" alt="">
+                        <div class="popup-container">
+                            <button class="show-popup-btn" data-popup="popup1">Lo quiero!</button>
+                            <div id="popup1" class="popup">
+                                <div class="popup-content">
+                                    <span class="close">&times;</span>
+                                    <img class="about__icons" src="images/LogoClaro.svg" alt="Folleto">
+                                    <h2>Detalles del plan</h2>
+                                    <p>Tu doble pack incluye 4 plataformas de streaming recargadas del mejor contenido.</p>
+                                    <p>Internet 500 Megas</p>
+                                    <div class="form-container">
+                                        <div class="contact-form">
+                                            <h2>Formulario de Contacto</h2>
+                                            <form action="procesar_formulario.php" method="POST">
+                                                <label for="nombre">Nombre y Apellido:</label>
+                                                <input
+                                                    type="text"
+                                                    id="nombre"
+                                                    name="nombre"
+                                                    placeholder="Ingresa tu Nombre y Apellido"
+                                                    required="required">
+
+                                                <label for="contacto">Número de Contacto:</label>
+                                                <input
+                                                    type="tel"
+                                                    id="contacto"
+                                                    name="contacto"
+                                                    pattern="[0-9]{9}"
+                                                    placeholder="1234567890"
+                                                    required="required">
+
+                                                <label for="rut">Rut</label>
+                                                <input
+                                                    pattern="[0-9]{9}"
+                                                    type="varchar"
+                                                    id="rut"
+                                                    name="rut"
+                                                    placeholder="Ingresa tu Rut"
+                                                    required="required">
+
+                                                <label for="opcion">Plan elegido</label>
+                                                <select id="opcion" name="opcion" required="required">
+                                                    <option value="">Seleccione una opción</option>
+                                                    <option value="Doble Pack+TV plus">Doble pack + TV Plus</option>
+                                                    <option value="Doble Pack 500mbs">Doble Pack 500 Megas + TV Full</option>
+                                                </select>
+
+                                                <button type="submit">Enviar</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price__element">
+                        <img class="about__ofertas" src="images/I500MB.jpg" alt="">
+                        <div class="popup-container">
+                            <button class="show-popup-btn" data-popup="popup1">Lo quiero!</button>
+                            <div id="popup1" class="popup">
+                                <div class="popup-content">
+                                    <span class="close">&times;</span>
+                                    <img class="about__icons" src="images/LogoDigi.png">
+                                    <h2>Detalles del plan</h2>
+                                    <p>Tu doble pack incluye 4 plataformas de streaming recargadas del mejor contenido.</p>
+                                    <p>Internet 500 Megas</p>
+                                    <div class="form-container">
+                                        <div class="contact-form">
+                                            <h2>Formulario de Contacto</h2>
+                                            <form action="procesar_formulario.php" method="POST">
+                                                <label for="nombre">Nombre y Apellido:</label>
+                                                <input
+                                                    type="text"
+                                                    id="nombre"
+                                                    name="nombre"
+                                                    placeholder="Ingresa tu Nombre y Apellido"
+                                                    required="required">
+
+                                                <label for="contacto">Número de Contacto:</label>
+                                                <input
+                                                    type="tel"
+                                                    id="contacto"
+                                                    name="contacto"
+                                                    pattern="[0-9]{9}"
+                                                    placeholder="1234567890"
+                                                    required="required">
+
+                                                <label for="rut">Rut</label>
+                                                <input
+                                                    pattern="[0-9]{9}"
+                                                    type="varchar"
+                                                    id="rut"
+                                                    name="rut"
+                                                    placeholder="Ingresa tu Rut">
+
+                                                <label for="opcion">Plan elegido</label>
+                                                <select id="opcion" name="opcion" required="required">
+                                                    <option value="">Seleccione una opción</option>
+                                                    <option value="Doble Pack+TV plus">Doble pack + TV Plus</option>
+                                                    <option value="Doble Pack 500mbs">Doble Pack 500 Megas + TV Full</option>
+                                                </select>
+
+                                                <button type="submit">Enviar</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price__element">
+                        <img class="about__ofertas" src="images/660MBS+TV+FONO.jpeg" alt="">
+                        <div class="popup-container">
+                            <button class="show-popup-btn" data-popup="popup1">Lo quiero!</button>
+                            <div id="popup1" class="popup">
+                                <div class="popup-content">
+                                    <span class="close">&times;</span>
+                                    <img class="about__icons" src="images/I500MB.jpg" alt="Folleto">
+                                    <h2>Detalles del plan</h2>
+                                    <p>Tu doble pack incluye 4 plataformas de streaming recargadas del mejor contenido.</p>
+                                    <p>Internet 500 Megas</p>
+                                    <div class="form-container">
+                                        <div class="contact-form">
+                                            <h2>Formulario de Contacto</h2>
+                                            <form action="procesar_formulario.php" method="POST">
+                                                <label for="nombre">Nombre y Apellido:</label>
+                                                <input
+                                                    type="text"
+                                                    id="nombre"
+                                                    name="nombre"
+                                                    placeholder="Ingresa tu Nombre y Apellido"
+                                                    required="required">
+
+                                                <label for="contacto">Número de Contacto:</label>
+                                                <input
+                                                    type="tel"
+                                                    id="contacto"
+                                                    name="contacto"
+                                                    pattern="[0-9]{9}"
+                                                    placeholder="1234567890"
+                                                    required="required">
+
+                                                <label for="rut">Rut</label>
+                                                <input
+                                                    pattern="[0-9]{9}"
+                                                    type="varchar"
+                                                    id="rut"
+                                                    name="rut"
+                                                    placeholder="Ingresa tu Rut"
+                                                    required="required">
+
+                                                <label for="opcion">Plan elegido</label>
+                                                <select id="opcion" name="opcion" required="required">
+                                                    <option value="">Seleccione una opción</option>
+                                                    <option value="Doble Pack+TV plus">Doble pack + TV Plus</option>
+                                                    <option value="Doble Pack 500mbs">Doble Pack 500 Megas + TV Full</option>
+                                                </select>
+
+                                                <button type="submit">Enviar</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <footer class="footer">
+        <section class="footer_container container">
+            <nav class="nav nav--footer">
+                <img src="images/LogoDigi.png" style="height: 100px; margin-right: 1px;">
+
+                <ul class="nav_link nav_link--footer">
+                    <li class="nav_items">
+                        <a href="index.html" class="nav_links">Inicio</a>
+                    </li>
+                    <li class="nav_items">
+                        <a href="postulaciones.html" class="nav_links">Trabaja con nosotros</a>
+                    </li>
+
+                    <li class="nav_items">
+                        <a href="AcademiaDigi.html" class="nav_links">Academia</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <form class="footer_form">
+                <h2 class="footer_newsletter">Suscribete</h2>
+                <div class="footer_inputs">
+                    <input type="email" placeholder="Email:" class="footer_input">
+                    <input type="submit" value="Registrate" class="footer_submit">
+                </div>
+            </form>
+        </section>
+
+        <section class="footer_copy container">
+            <div class="footer_social">
+                <a href="https://www.facebook.com/digisalesspa/" class="footer_icons"><img src="images/facebook.svg" class="footer_img"></a>
+            </div>
+            <div class="footer social">
+                <a href="https://www.instagram.com/digisales.cl/" class="footer_icons"><img src="images/instagram.svg" class="footer_img"></a>
+            </div>
+            <div class="footer social">
+                <a href="https://cl.linkedin.com/company/digisales-ltda" class="footer_icons"><img src="images/linkedin.svg" class="footer_img"></a>
+            </div>
+
+            <h3 class="footer_copyright">Derechos reservados &copy; DIGISALES.SA</h3>
+        </section>
+    </footer>
+
+        <script src="script.js"></script>
+        <script src="menu.js"></script>
+        <script type="”module”" src="https://unpkg.com/html-input-rut"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
