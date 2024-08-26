@@ -716,6 +716,10 @@ background-position: 0 0,13px 13px;
         justify-self: center;
         grid-row: 1/2;
     }
+
+    .price__table {
+        grid-template-columns: 1fr;
+    }
 }
   
 
