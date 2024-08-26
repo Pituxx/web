@@ -270,12 +270,11 @@ background-position: 0 0,13px 13px;
 }
 
 .price__table{
-    padding-top: 60px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2.5em;
-    justify-content: space-evenly;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    padding: 30px;
+    justify-items: center;
 }
 
 
@@ -285,8 +284,8 @@ background-position: 0 0,13px 13px;
     margin-bottom: 20px;
     text-align: center;
     border-radius: 10px;
-    width: 20%;
-    padding: 20px;
+    width: 80%;
+    padding: 40px;
     background-color:#b3b3b3;
     --color-plan: #000000;
     --color-price: #da291c;
