@@ -54,7 +54,7 @@ body{
     color: #fff;
 }
 
-.hero2{
+.hero2 {
     width: 100%;
     height: 100vh;
     padding: 20px;
@@ -79,6 +79,7 @@ body{
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     z-index: -1;
 }
+
 
 
 .hero::before{
@@ -723,9 +724,26 @@ background-position: 0 0,13px 13px;
         grid-template-columns: 1fr;
     }
 
+    .hero2 {
+        height: 80vh; /* Ajusta la altura para pantallas más pequeñas */
+        min-height: 250px;
+        max-height: 250px;
+    }
+
     .hero2::before {
-        background-position: top; /* Alinea la imagen en la parte superior para pantallas móviles */
-        background-size: cover; /* Mantén la imagen cubriendo el área disponible */
+        background-position: top center; /* Ajusta la posición para asegurar que lo importante se vea en móviles */
+        background-size: contain; /* Ajusta el tamaño de la imagen para que se vea completa en pantallas más pequeñas */
+    }
+
+    .hero{
+        height: 80vh; /* Ajusta la altura para pantallas más pequeñas */
+        min-height: 250px;
+        max-height: 300px;
+    }
+
+    .hero::before {
+        background-position: top center; /* Ajusta la posición para asegurar que lo importante se vea en móviles */
+        background-size: contain; /* Ajusta el tamaño de la imagen para que se vea completa en pantallas más pequeñas */
     }
 }
   
