@@ -1,9 +1,9 @@
 <?php
 
 $servername = "localhost";
-$username = "root";
+$username = "digisale_wp915";
 $password = "";
-$dbname = "digisales";
+$dbname = "digisale_wp915";
 
 // Crear conexión
 $conn = new mysqli($servername, $username, $password, $dbname);
