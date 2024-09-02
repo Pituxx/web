@@ -1,7 +1,7 @@
 <?php
 
 $servername = "localhost";
-$username = "root";
+$username = "digisale_wp915";
 $password = "";
 $dbname = "digisale_wp915";
 
