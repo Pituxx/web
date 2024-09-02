@@ -1,6 +1,6 @@
 <?php
 
-$servername = "digisale_";
+$servername = "cp010";
 $username = "digisale_wp915";
 $password = ";rW962C(-@w2";
 $dbname = "digisale_wp915";
