@@ -1,8 +1,8 @@
 <?php
 
 $servername = "localhost";
-$username = "digisale_wp915";
-$password = "";
+$username = "cris";
+$password = ";rW962C(-@w2";
 $dbname = "digisale_wp915";
 
 // Crear conexión
