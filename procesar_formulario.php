@@ -1,9 +1,9 @@
 <?php
 
-$servername = "cp010";
-$username = "digisale_wp915";
-$password = ";rW962C(-@w2";
-$dbname = "digisale_wp915";
+$servername = "localhost";
+$username = "digisale_admin";
+$password = "V[{JLX}=SVy3";
+$dbname = "digisales_page";
 
 // Crear conexión
 $conn = new mysqli($servername, $username, $password, $dbname);
