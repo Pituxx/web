@@ -36,9 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <a href="index.html" style="display: inline-block; margin-top: 20px; padding: 10px 20px; color: #ffffff; background-color: #28a745; text-decoration: none; border-radius: 5px;">Volver a la página principal</a>
                 </div>
             </div>';
-        } else {
-            echo "Error: " . $sql . "<br>" . $conn->error;
-        }
+    }
 }
 
 $conn->close();
