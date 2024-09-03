@@ -39,6 +39,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         } else {
             echo "Error: " . $sql . "<br>" . $conn->error;
         }
+    } else {
+        echo "Todos los campos son obligatorios.";
+    }
 }
 
 $conn->close();
