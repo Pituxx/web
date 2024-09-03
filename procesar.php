@@ -1,9 +1,9 @@
 <?php
 
 $servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "digisales";
+$username = "digisale_admin";
+$password = "V[{JLX}=SVy3";
+$dbname = "digisale_page";
 
 // Crear conexión
 $conn = new mysqli($servername, $username, $password, $dbname);
