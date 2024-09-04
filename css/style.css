@@ -230,7 +230,7 @@ body{
 }
 
 .about__ofertas{
-    width:100%;
+    width: 100%;
 }
 
 /* Knowledge */
@@ -287,8 +287,8 @@ background-position: 0 0,13px 13px;
     margin-bottom: 20px;
     text-align: center;
     border-radius: 10px;
-    width: 105%;
-    padding: 20px;
+    width: 80%;
+    padding: 40px;
     background-color:#b3b3b3;
     --color-plan: #000000;
     --color-price: #da291c;
@@ -345,8 +345,8 @@ background-position: 0 0,13px 13px;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 10px;
-        height: 100%; /* Altura del viewport para centrar verticalmente */
+        margin-top: 20px;
+        height: 80vh; /* Altura del viewport para centrar verticalmente */
     }
     
     .contact-form {
@@ -354,8 +354,7 @@ background-position: 0 0,13px 13px;
         padding: 20px;
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        width: 100%;
-        margin-bottom: 10%;
+        width: 300px;
     }
     
     .contact-form h2 {
@@ -641,7 +640,7 @@ background-position: 0 0,13px 13px;
 .footer_copy{
     --padding-container:30px 0;
     text-align: center;
-    color: #ffffff;
+    color: #008106;
 
 }
 
@@ -657,43 +656,6 @@ background-position: 0 0,13px 13px;
 .footer_img{
     width: 30px;
 }
-
-/* SWITCH */
-
-.miswitch{
-	border: 1px solid #225B78;
-	border-radius: 20px;
-	color: #fff;
-	position: relative;
-	margin: 0px auto 50px;
-	width: 200px;
-	overflow: hidden;
-	padding: 10px;
-	display: flex;
-	justify-content: space-between;
-}
-
-.miswitch a{
-	font-size: 14px;
-	z-index: 2;
-	position: relative;
-	width: 50%;
-	text-align: center;
-	cursor: pointer;
-}
-
-.swicht-btn{
-	position: absolute;
-	background: #0C1F28;
-	width: 50%;
-	height: 90%;
-	border-radius: 20px;
-	top: 2px;
-	left: 2px;
-	z-index: 1;
-	transition: all .5s;
-}
-
 
 
 
