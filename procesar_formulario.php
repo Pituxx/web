@@ -1,9 +1,9 @@
 <?php
 
 $servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "digisales";
+$username = "digisale_admin";
+$password = "V[{JLX}=SVy3";
+$dbname = "digisale_page";
 
 // Crear conexión
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -19,12 +19,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nombre = $_POST['nombre'] ?? '';
     $contacto = $_POST['contacto'] ?? '';
     $rut = $_POST['rut'] ?? '';
+    $email = $_POST['email'] ?? '';
     $opcion = $_POST['opcion'] ?? '';
+    $comuna = $_POST['comuna'] ?? '';
+    $direccion = $_POST['direccion'] ?? '';
 
     // Validar que todos los campos estén llenos
     if (!empty($nombre) && !empty($contacto) && !empty($rut) && !empty($opcion)) {
         // Insertar los datos en la base de datos
-        $sql = "INSERT INTO usuarios (nombre, contacto, rut, opcion) VALUES ('$nombre', '$contacto', '$rut', '$opcion')";
+        $sql = "INSERT INTO usuarios (nombre, contacto, rut,email, opcion, comuna, direccion) VALUES ('$nombre', '$contacto', '$rut', '$email', '$opcion', '$comuna', '$direccion')";
 
         if ($conn->query($sql) === TRUE) {
             echo '

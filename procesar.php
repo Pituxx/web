@@ -1,9 +1,9 @@
 <?php
 
 $servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "digisales";
+$username = "digisale_admin";
+$password = "V[{JLX}=SVy3";
+$dbname = "digisale_page";
 
 // Crear conexión
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -27,9 +27,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $sql = "INSERT INTO postulantes (nombre, numero_contacto, email, opcion) VALUES ('$nombre', '$contacto', '$email', '$opcion')";
 
         if ($conn->query($sql) === TRUE) {
-            ?>
-            <h3>Tu postulacion ha sido enviada</h3>
-            <?php
+            echo '
+            <div style="display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #f0f8ff;">
+                <div style="text-align: center; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); background-color: #ffffff;">
+                    <img src="images/LogoDigi.png" alt="Éxito" style="width: 100px; margin-bottom: 20px;">
+                    <h2 style="color: #28a745;">¡Postulacion enviada!</h2>
+                    <p style="color: #555555;">Gracias por postular. Hemos recibido tus datos exitosamente.</p>
+                    <a href="index.html" style="display: inline-block; margin-top: 20px; padding: 10px 20px; color: #ffffff; background-color: #28a745; text-decoration: none; border-radius: 5px;">Volver a la página principal</a>
+                </div>
+            </div>';
         } else {
             echo "Error: " . $sql . "<br>" . $conn->error;
         }
