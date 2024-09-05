@@ -282,14 +282,14 @@ background-position: 0 0,13px 13px;
 
 
 .price__element{
-    box-shadow: 0 0 10px rgba(255, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.263);
     background-color: #e5e5f7;
     margin-bottom: 20px;
     text-align: center;
     border-radius: 10px;
     width: 105%;
     padding: 20px;
-    background-color:#bfbfbf;
+    background-color:#eeeeee;
     --color-plan: #000000;
     --color-price: #da291c;
     --bg-cta: #da291c;
