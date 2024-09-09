@@ -658,12 +658,21 @@ background-position: 0 0,13px 13px;
     width: 30px;
 }
 
+
+
 /* SWITCH */
 
+
+.wrap{
+    width: 90%;
+    max-width: 100%;
+    margin: 50px auto;
+}
+
 .miswitch{
-	border: 1px solid #225B78;
+	border: 1px solid #da291c;
 	border-radius: 20px;
-	color: #fff;
+	color: #e86161;
 	position: relative;
 	margin: 0px auto 50px;
 	width: 200px;
@@ -684,7 +693,7 @@ background-position: 0 0,13px 13px;
 
 .swicht-btn{
 	position: absolute;
-	background: #0C1F28;
+	background: #3b3b3b;
 	width: 50%;
 	height: 90%;
 	border-radius: 20px;
@@ -694,7 +703,98 @@ background-position: 0 0,13px 13px;
 	transition: all .5s;
 }
 
+.on{
+    left: 98px;
+}
 
+/* Table */
+
+.pricing-wrap{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: space-between;
+
+}
+
+.pricing-table{
+    gap: 40px;
+    padding: 30px;
+    transition: transform .5s ease;
+}
+
+.pricing-table:hover{
+    transform: scale(1.07);
+}
+
+.pricing-table-cont{
+    height: 500px;
+    text-align: center;
+	position: relative;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d ;
+    transition: .3s ease;
+}
+
+.pricing-table-movil , .pricing-table-hogar{
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.pricing-table-hogar{
+    transform: rotateY(180deg);
+}
+
+.rotando-tabla{
+	transform: rotateY(180deg);
+}
+
+.pricing-table-head{
+	color: #173D50;
+	padding: 30px 0px;
+}
+
+.pricing-table-head h2{
+	font-size: 16px;
+	letter-spacing: 2px;	
+	font-weight: bold;
+}
+
+.pricing-table-head h3{
+	font-size: 60px;
+	font-weight: 400;
+	display: inline;
+}
+
+.pricing-table-head h3 sup, .pricing-table-head h3 sub{
+	font-size: 20px;
+	color: #ABB8C0;
+	font-weight: 600;
+}
+
+.pricing-table-head h3 sub{
+	font-size: 13px;
+}
+
+.pricing-table-head.estandar-title h2,
+.pricing-table-head.estandar-title h3,
+.pricing-table-head.estandar-title h3 sup,
+.pricing-table-head.estandar-title h3 sub{
+	color: #E97D68;
+}
+
+.pricing-table-list li{
+	background: #F1F3F5;
+	padding: 10px 0;
+}
+
+.pricing-table-list li:nth-child(2n){
+	background: #fff;
+}
 
 
 
