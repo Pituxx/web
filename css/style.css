@@ -404,10 +404,10 @@ background-position: 0 0,13px 13px;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        z-index: 1000;
+        z-index: 1;
     }
 
-    .popup-container .show-popup-btn {
+    .show-popup-btn {
         padding: 10px 20px;
         bottom: 10px;
         width: 70%;
@@ -724,7 +724,7 @@ background-position: 0 0,13px 13px;
 }
 
 .pricing-table:hover{
-    transform: scale(1.07);
+    transform: scale(1.1);
 }
 
 .pricing-table-cont{
@@ -795,6 +795,7 @@ background-position: 0 0,13px 13px;
 .pricing-table-list li:nth-child(2n){
 	background: #fff;
 }
+
 
 
 

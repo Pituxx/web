@@ -49,7 +49,7 @@
             </section>
             </header>
 
-            <div class="wrap">
+            <div class="wrap"> 
                 <div class="miswitch">
                     <div class="swicht-btn" id="swicht-btn"></div>
                     <a>Movil</a>
@@ -63,117 +63,14 @@
                             <div class="pricing-table-movil">
                                 <div class="price__element">
                                     <img class="about__ofertas" src="images/PlanI+TV.jpeg" alt="">
-                                    <div class="popup-container">
-                                        <button class="show-popup-btn" data-popup="popup1">Lo quiero!</button>
-                                        <div id="popup1" class="popup">
-                                            <div class="popup-content">
-                                                <span class="close">&times;</span>
-                                                <img class="about__icons" src="images/LogoClaro.svg" alt="Folleto">
-                                                <h2>Selecciona tu plan</h2>
-                                                <p>Luego de enviar el formulario nuestro equipo se contactara con usted</p>
-                                                <div class="form-container">
-                                                    <div class="contact-form">
-                                                        <h2>Formulario de Contacto</h2>
-                                                        <form action="procesar_formulario.php" method="POST">
-                                                            <label for="nombre">Nombre y Apellido:</label>
-                                                            <input
-                                                                type="text"
-                                                                id="nombre"
-                                                                name="nombre"
-                                                                placeholder="Ingresa tu Nombre y Apellido"
-                                                                required="required">
-            
-                                                            <label for="contacto">Número de Contacto:</label>
-                                                            <input
-                                                                type="tel"
-                                                                id="contacto"
-                                                                name="contacto"
-                                                                pattern="[0-9]{9}"
-                                                                placeholder="1234567890"
-                                                                required="required">
-            
-                                                            <label for="rut">Rut</label>
-                                                            <input
-                                                                pattern="[0-9]{9}"
-                                                                type="varchar"
-                                                                id="rut"
-                                                                name="rut"
-                                                                placeholder="Ingresa tu Rut"
-                                                                required="required">
-            
-                                                            <label for="opcion">Plan elegido</label>
-                                                            <select id="opcion" name="opcion" required="required">
-                                                                <option value="">Seleccione una opción</option>
-                                                                <option value="Doble Pack+TV plus">Doble pack + TV Plus</option>
-                                                                <option value="Doble Pack 500mbs">Doble Pack 500 Megas + TV Full</option>
-                                                            </select>
-            
-                                                            <button type="submit">Enviar</button>
-                                                        </form>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <button value="opcion1" id="opcion" name="opcion" class="show-popup-btn" data-popup="popup">Lo quiero!</button>
                                 </div>
                                 
                             </div>
                             <div class="pricing-table-hogar">
                                 <div class="price__element">
-                                    <img class="about__ofertas" src="images/I500MB.jpg" alt="">
-                                    <div class="popup-container">
-                                        <button class="show-popup-btn" data-popup="popup2">Lo quiero!</button>
-                                        <div id="popup2" class="popup">
-                                            <div class="popup-content">
-                                                <span class="close">&times;</span>
-                                                <img class="about__icons" src="images/LogoClaro.svg" alt="Folleto">
-                                                <h2>Selecciona tu plan</h2>
-                                                <p>Luego de enviar el formulario nuestro equipo se contactara con usted</p>
-                                                <div class="form-container">
-                                                    <div class="contact-form">
-                                                        <h2>Formulario de Contacto</h2>
-                                                        <form action="procesar_formulario.php" method="POST">
-                                                            <label for="nombre">Nombre y Apellido:</label>
-                                                            <input
-                                                                type="text"
-                                                                id="nombre"
-                                                                name="nombre"
-                                                                placeholder="Ingresa tu Nombre y Apellido"
-                                                                required="required">
-            
-                                                            <label for="contacto">Número de Contacto:</label>
-                                                            <input
-                                                                type="tel"
-                                                                id="contacto"
-                                                                name="contacto"
-                                                                pattern="[0-9]{9}"
-                                                                placeholder="1234567890"
-                                                                required="required">
-            
-                                                            <label for="rut">Rut</label>
-                                                            <input
-                                                                pattern="[0-9]{9}"
-                                                                type="varchar"
-                                                                id="rut"
-                                                                name="rut"
-                                                                placeholder="Ingresa tu Rut"
-                                                                required="required">
-            
-                                                            <label for="opcion">Plan elegido</label>
-                                                            <select id="opcion" name="opcion" required="required">
-                                                                <option value="">Seleccione una opción</option>
-                                                                <option value="Doble Pack+TV plus">Doble pack + TV Plus</option>
-                                                                <option value="Doble Pack 500mbs">Doble Pack 500 Megas + TV Full</option>
-                                                            </select>
-            
-                                                            <button type="submit">Enviar</button>
-                                                        </form>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
+                                    <img class="about__ofertas" src="images/PlanI+TV.jpeg" alt="">
+                                    <button id="opcion" name="opcion" class="show-popup-btn" data-popup="popup">Lo quiero!</button>
                                 </div>
                             </div>
                         </div>
@@ -184,69 +81,14 @@
                             <div class="pricing-table-movil">
                                 <div class="price__element">
                                     <img class="about__ofertas" src="images/PlanI+TV.jpeg" alt="">
-                                    <div class="popup-container">
-                                        <button class="show-popup-btn" data-popup="popup3">Lo quiero!</button>
-                                        <div id="popup3" class="popup">
-                                            <div class="popup-content">
-                                                <span class="close">&times;</span>
-                                                <img class="about__icons" src="images/LogoClaro.svg" alt="Folleto">
-                                                <h2>Selecciona tu plan</h2>
-                                                <p>Luego de enviar el formulario nuestro equipo se contactara con usted</p>
-                                                <div class="form-container">
-                                                    <div class="contact-form">
-                                                        <h2>Formulario de Contacto</h2>
-                                                        <form action="procesar_formulario.php" method="POST">
-                                                            <label for="nombre">Nombre y Apellido:</label>
-                                                            <input
-                                                                type="text"
-                                                                id="nombre"
-                                                                name="nombre"
-                                                                placeholder="Ingresa tu Nombre y Apellido"
-                                                                required="required">
-            
-                                                            <label for="contacto">Número de Contacto:</label>
-                                                            <input
-                                                                type="tel"
-                                                                id="contacto"
-                                                                name="contacto"
-                                                                pattern="[0-9]{9}"
-                                                                placeholder="1234567890"
-                                                                required="required">
-            
-                                                            <label for="rut">Rut</label>
-                                                            <input
-                                                                pattern="[0-9]{9}"
-                                                                type="varchar"
-                                                                id="rut"
-                                                                name="rut"
-                                                                placeholder="Ingresa tu Rut"
-                                                                required="required">
-            
-                                                            <label for="opcion">Plan elegido</label>
-                                                            <select id="opcion" name="opcion" required="required">
-                                                                <option value="">Seleccione una opción</option>
-                                                                <option value="Doble Pack+TV plus">Doble pack + TV Plus</option>
-                                                                <option value="Doble Pack 500mbs">Doble Pack 500 Megas + TV Full</option>
-                                                            </select>
-            
-                                                            <button type="submit">Enviar</button>
-                                                        </form>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
+                                    <button id="opcion" name="opcion" class="show-popup-btn" data-popup="popup">Lo quiero!</button>
                                 </div>
                                 
                             </div>
                             <div class="pricing-table-hogar">
                                 <div class="price__element">
-                                    <img class="about__ofertas" src="images/I500MB.jpg" alt="">
-                                    <div class="popup-container">
-                                        <button class="show-popup-btn" data-popup="popup4">Lo quiero!</button>
-                                        
-                                    </div>
+                                    <img class="about__ofertas" src="images/PlanI+TV.jpeg" alt="">
+                                    <button id="opcion" name="opcion" class="show-popup-btn" data-popup="popup">Lo quiero!</button>
                                 </div>
                             </div>
                         </div>
@@ -257,20 +99,14 @@
                             <div class="pricing-table-movil">
                                 <div class="price__element">
                                     <img class="about__ofertas" src="images/PlanI+TV.jpeg" alt="">
-                                    <div class="popup-container">
-                                        <button class="show-popup-btn" data-popup="popup5">Lo quiero!</button>
-                                        
-                                    </div>
+                                    <button id="opcion" name="opcion" class="show-popup-btn" data-popup="popup">Lo quiero!</button>
                                 </div>
                                 
                             </div>
                             <div class="pricing-table-hogar">
                                 <div class="price__element">
-                                    <img class="about__ofertas" src="images/I500MB.jpg" alt="">
-                                    <div class="popup-container">
-                                        <button class="show-popup-btn" data-popup="popup6">Lo quiero!</button>
-                                        
-                                    </div>
+                                    <img class="about__ofertas" src="images/PlanI+TV.jpeg" alt="">
+                                    <button class="show-popup-btn" data-popup="popup">Lo quiero!</button>
                                 </div>
                             </div>
                         </div>
@@ -278,8 +114,58 @@
 
                     
                 </div>
+                <div class="popup-container">
+                    <div id="popup" class="popup">
+                        <div class="popup-content">
+                            <span class="close">&times;</span>
+                            <img class="about__icons" src="images/LogoClaro.svg" alt="Folleto">
+                            <h2>Selecciona tu plan</h2>
+                            <p>Luego de enviar el formulario nuestro equipo se contactara con usted</p>
+                            <div class="form-container">
+                                <div class="contact-form">
+                                    <h2>Formulario de Contacto</h2>
+                                    <form action="procesar_formulario.php" method="POST">
+                                        <label for="nombre">Nombre y Apellido:</label>
+                                        <input
+                                            type="text"
+                                            id="nombre"
+                                            name="nombre"
+                                            placeholder="Ingresa tu Nombre y Apellido"
+                                            required="required">
 
-                <div class="popup-container"></div>
+                                        <label for="contacto">Número de Contacto:</label>
+                                        <input
+                                            type="tel"
+                                            id="contacto"
+                                            name="contacto"
+                                            pattern="[0-9]{9}"
+                                            placeholder="1234567890"
+                                            required="required">
+
+                                        <label for="rut">Rut</label>
+                                        <input
+                                            pattern="[0-9]{9}"
+                                            type="varchar"
+                                            id="rut"
+                                            name="rut"
+                                            placeholder="Ingresa tu Rut"
+                                            required="required">
+
+                                        <label for="opcion">Plan elegido</label>
+                                        <select id="opcion" name="opcion" required="required">
+                                            <option value="">Seleccione una opción</option>
+                                            <option value="Doble Pack+TV plus">Doble pack + TV Plus</option>
+                                            <option value="Doble Pack 500mbs">Doble Pack 500 Megas + TV Full</option>
+                                        </select>
+
+                                        <button type="submit">Enviar</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
                 
             </div>
             
