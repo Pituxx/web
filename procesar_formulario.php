@@ -15,15 +15,17 @@ if ($conn->connect_error) {
 
 // Verificar si se enviaron los datos del formulario
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Obtener los datos del formulario
-    $nombre = $_POST['nombre'] ?? '';
-    $contacto = $_POST['contacto'] ?? '';
-    $rut = $_POST['rut'] ?? '';
-    $opcion = $_POST['opcion'] ?? '';
-    
+    // Obtener los datos del formulario y escapar las variables
+    $nombre = mysqli_real_escape_string($conn, $_POST['nombre'] ?? '');
+    $contacto = mysqli_real_escape_string($conn, $_POST['contacto'] ?? '');
+    $rut = mysqli_real_escape_string($conn, $_POST['rut'] ?? '');
+    $opcion = mysqli_real_escape_string($conn, $_POST['opcion'] ?? '');
 
     // Validar que todos los campos estén llenos
     if (!empty($nombre) && !empty($contacto) && !empty($rut) && !empty($opcion)) {
+        // Imprimir los valores recibidos para verificar
+        echo "Nombre: $nombre, Contacto: $contacto, RUT: $rut, Opción: $opcion <br>";
+
         // Insertar los datos en la base de datos
         $sql = "INSERT INTO usuarios (nombre, contacto, rut, opcion) VALUES ('$nombre', '$contacto', '$rut', '$opcion')";
 
@@ -38,8 +40,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </div>
             </div>';
         } else {
-            echo "Error: " . $sql . "<br>" . $conn->error;
+            echo "Error en la consulta: " . $sql . "<br>" . $conn->error;
         }
+    } else {
+        echo "Todos los campos son obligatorios.";
     }
 }
 
