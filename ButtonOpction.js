@@ -11,9 +11,6 @@ document.querySelectorAll('.show-popup-btn').forEach(button => {
             body: `opcion=${opcion}`
         })
         .then(response => response.text())
-        .then(data => {
-            alert('Opción guardada: ' + opcion);
-        })
         .catch(error => {
             console.error('Error:', error);
         });
