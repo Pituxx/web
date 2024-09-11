@@ -345,8 +345,8 @@ background-position: 0 0,13px 13px;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 10px;
-        height: 110vh; /* Altura del viewport para centrar verticalmente */
+        margin-top:5px;
+        height: 70vh; /* Altura del viewport para centrar verticalmente */
     }
     
     .contact-form {
