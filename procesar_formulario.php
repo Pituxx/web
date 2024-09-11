@@ -15,7 +15,13 @@ if ($conn->connect_error) {
 
 // Verificar si se enviaron los datos del formulario
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Obtener los datos del formulario y escapar las variables
+    // Imprimir los datos recibidos para depuración
+    echo "Nombre: " . $_POST['nombre'] . "<br>";
+    echo "Contacto: " . $_POST['contacto'] . "<br>";
+    echo "RUT: " . $_POST['rut'] . "<br>";
+    echo "Opción: " . $_POST['opcion'] . "<br>";
+
+    // Obtener los datos del formulario
     $nombre = mysqli_real_escape_string($conn, $_POST['nombre'] ?? '');
     $contacto = mysqli_real_escape_string($conn, $_POST['contacto'] ?? '');
     $rut = mysqli_real_escape_string($conn, $_POST['rut'] ?? '');
