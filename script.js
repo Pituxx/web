@@ -17,8 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const opcion = this.getAttribute('data-opcion'); // Obtener la opción seleccionada
             document.getElementById('opcion-seleccionada').value = opcion; // Asignar al campo oculto
     
-            // Verificar que el valor se haya asignado correctamente (para depuración)
-            console.log("Opción seleccionada: " + document.getElementById('opcion-seleccionada').value);
+
         });
     });
     
