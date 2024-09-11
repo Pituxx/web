@@ -27,14 +27,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $rut = mysqli_real_escape_string($conn, $_POST['rut'] ?? '');
     $opcion = mysqli_real_escape_string($conn, $_POST['opcion'] ?? '');
 
-    // Validar que todos los campos estén llenos
     if (!empty($nombre) && !empty($contacto) && !empty($rut) && !empty($opcion)) {
-        // Imprimir los valores recibidos para verificar
-        echo "Nombre: $nombre, Contacto: $contacto, RUT: $rut, Opción: $opcion <br>";
-
         // Insertar los datos en la base de datos
         $sql = "INSERT INTO usuarios (nombre, contacto, rut, opcion) VALUES ('$nombre', '$contacto', '$rut', '$opcion')";
-
         if ($conn->query($sql) === TRUE) {
             echo '
             <div style="display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #f0f8ff;">
