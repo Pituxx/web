@@ -12,6 +12,17 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
+// Al hacer clic en un botón, guarda la opción seleccionada y abre el formulario
+document.querySelectorAll('.show-popup-btn').forEach(button => {
+    button.addEventListener('click', function() {
+        const opcion = this.getAttribute('data-opcion');
+        
+        // Establecer la opción seleccionada en el campo oculto del formulario
+        document.getElementById('opcion-seleccionada').value = opcion;
+        
+    });
+});
+
     closeBtns.forEach(function (btn) {
         btn.addEventListener('click', function () {
             var popup = btn.closest('.popup');
