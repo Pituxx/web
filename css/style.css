@@ -671,9 +671,11 @@ background-position: 0 0,13px 13px;
 
 .miswitch{
 	border: 1px solid #000000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.263);
 	border-radius: 20px;
 	color: #ffffff;
-    background-color: #7d7d7d;
+    background-color: #e5e5f7;
+    background-color:#d8d8d8;
 	position: relative;
 	margin: 0px auto 50px;
 	width: 200px;
@@ -694,7 +696,7 @@ background-position: 0 0,13px 13px;
 
 .swicht-btn{
 	position: absolute;
-	background: #008106;
+	background: #d30000;
 	width: 50%;
 	height: 90%;
 	border-radius: 20px;
