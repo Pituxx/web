@@ -73,7 +73,7 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(180deg, #00000060 0%, #0000008c 100%), url('../images/reclutadora.jpg');
+    background-image: linear-gradient(180deg, #00000060 0%, #00000034 100%), url('../images/reclutadora.jpg');
     background-size: cover;
     z-index: -1;
 }
