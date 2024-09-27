@@ -22,7 +22,6 @@
 .contenedor{
     width: 100%;
     max-width: 100%;
-    margin: 0 auto;
     overflow: hidden;
 }
 
@@ -36,10 +35,9 @@ body{
 .container{
     width: 90%;
     max-width: 1200px;
-    padding: 0 15px;
+    padding: 15px 15px;
     margin: 0 auto;
     overflow: hidden;
-    padding: var(--padding-container);
 }
 
 .hero{
@@ -99,7 +97,7 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(180deg, #00000060 0%, #00000034 100%), url('../images/reclutadora.jpg');
+    background-image: linear-gradient(180deg, #0000007f 0%, #00000034 100%), url('../images/reclutadora.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -157,7 +155,7 @@ body{
 }
 
 .nav_links:hover{
-    color: #00b548;
+    color: #3C4832;
     text-decoration: none;
     cursor: pointer;
 }
@@ -230,9 +228,9 @@ body{
 
 .subtitle__price{
     color: #da291c;
-    font-size: 2rem;
-    margin-top: 10%;
-    margin-bottom: 10px;
+    font-size: 3rem;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 .about__paragraph{
