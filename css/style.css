@@ -852,6 +852,16 @@ background-position: 0 0,13px 13px;
 }
 
 
+/* LOGO CLARO */
+
+.logoclaro{
+
+    height: 150px; 
+    margin-bottom: 50px; 
+    margin-top: 50px;
+}
+
+
 
 /* ABOUT */
 
@@ -949,6 +959,13 @@ background-position: 0 0,13px 13px;
         grid-template-rows: max-content 1fr;
         gap: 3em;
         text-align: center;
+    }
+
+    .logoclaro{
+    
+        height: 130px; 
+        margin-bottom: 50px; 
+        margin-top: 50px;
     }
 
     .knowledge__picture{
