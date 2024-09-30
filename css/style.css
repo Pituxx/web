@@ -372,7 +372,7 @@ background-position: 0 0,13px 13px;
         justify-content: center;
         align-items: center;
         margin-top:5px;
-        height: 70vh; /* Altura del viewport para centrar verticalmente */
+        height: 95vh; /* Altura del viewport para centrar verticalmente */
     }
     
     .contact-form {
@@ -380,8 +380,8 @@ background-position: 0 0,13px 13px;
         padding: 20px;
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        width: 100%;
-        margin-bottom: 10%;
+        width: 60%;
+        margin-bottom: 5%;
     }
     
     .contact-form h2 {
@@ -475,10 +475,11 @@ background-position: 0 0,13px 13px;
     .popup-container .popup-content {
         background-color: #fff;
         margin: 15% auto;
-        padding: 20px;
+        padding: 10px;
         border: 1px solid #888;
         width: 80%;
-        max-width: 500px;
+        height: 120%;
+        max-width: 400px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         position: relative;
     }
