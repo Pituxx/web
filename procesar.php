@@ -34,8 +34,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $extensionArchivo = pathinfo($nombreArchivo, PATHINFO_EXTENSION);
 
         if (in_array($extensionArchivo, $extensionesPermitidas)) {
-            // Definir la ruta donde se guardará el archivo
-            $directorioSubida = "uploads/";
+            // Definir la ruta donde se guardará el archivo dentro de 'public_html/uploads'
+            $directorioSubida = $_SERVER['DOCUMENT_ROOT'] . "/uploads/";
             $rutaArchivo = $directorioSubida . basename($nombreArchivo);
 
             // Mover el archivo a la carpeta deseada
@@ -44,7 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 if (!empty($nombre) && !empty($contacto) && !empty($email) && !empty($opcion)) {
                     // Insertar los datos en la base de datos
                     $sql = "INSERT INTO postulantes (nombre, numero_contacto, email, opcion, ruta_archivo) 
-                            VALUES ('$nombre', '$contacto', '$email', '$opcion', '$rutaArchivo')";
+                            VALUES ('$nombre', '$contacto', '$email', '$opcion', '/uploads/" . basename($nombreArchivo) . "')";
 
                     if ($conn->query($sql) === TRUE) {
                         echo '
