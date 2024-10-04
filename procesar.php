@@ -21,30 +21,30 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'] ?? '';
     $opcion = $_POST['opcion'] ?? '';
 
-    // Verificar si se subió un archivo
-    if (isset($_FILES['archivo']) && $_FILES['archivo']['error'] == 0) {
-        // Variables del archivo
-        $nombreArchivo = $_FILES['archivo']['name'];
-        $tipoArchivo = $_FILES['archivo']['type'];
-        $tamañoArchivo = $_FILES['archivo']['size'];
-        $rutaTemporal = $_FILES['archivo']['tmp_name'];
+    // Verificar si se subió un cv
+    if (isset($_FILES['cv']) && $_FILES['cv']['error'] == 0) {
+        // Variables del cv
+        $nombrecv = $_FILES['cv']['name'];
+        $tipocv = $_FILES['cv']['type'];
+        $tamañocv = $_FILES['cv']['size'];
+        $rutaTemporal = $_FILES['cv']['tmp_name'];
 
-        // Verificar el tipo de archivo (por ejemplo, solo imágenes o PDFs)
+        // Verificar el tipo de cv (por ejemplo, solo imágenes o PDFs)
         $extensionesPermitidas = array("pdf");
-        $extensionArchivo = pathinfo($nombreArchivo, PATHINFO_EXTENSION);
+        $extensioncv = pathinfo($nombrecv, PATHINFO_EXTENSION);
 
-        if (in_array($extensionArchivo, $extensionesPermitidas)) {
-            // Definir la ruta donde se guardará el archivo dentro de 'public_html/uploads'
+        if (in_array($extensioncv, $extensionesPermitidas)) {
+            // Definir la ruta donde se guardará el cv dentro de 'public_html/uploads'
             $directorioSubida = $_SERVER['DOCUMENT_ROOT'] . "/uploads/";
-            $rutaArchivo = $directorioSubida . basename($nombreArchivo);
+            $rutacv = $directorioSubida . basename($nombrecv);
 
-            // Mover el archivo a la carpeta deseada
-            if (move_uploaded_file($rutaTemporal, $rutaArchivo)) {
+            // Mover el cv a la carpeta deseada
+            if (move_uploaded_file($rutaTemporal, $rutacv)) {
                 // Validar que todos los campos estén llenos
                 if (!empty($nombre) && !empty($contacto) && !empty($email) && !empty($opcion)) {
                     // Insertar los datos en la base de datos
-                    $sql = "INSERT INTO postulantes (nombre, numero_contacto, email, opcion, ruta_archivo) 
-                            VALUES ('$nombre', '$contacto', '$email', '$opcion', '/uploads/" . basename($nombreArchivo) . "')";
+                    $sql = "INSERT INTO postulantes (nombre, numero_contacto, email, opcion, ruta_cv) 
+                            VALUES ('$nombre', '$contacto', '$email', '$opcion', '/uploads/" . basename($nombrecv) . "')";
 
                     if ($conn->query($sql) === TRUE) {
                         echo '
@@ -63,13 +63,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     echo "Todos los campos son obligatorios.";
                 }
             } else {
-                echo "Hubo un error al subir el archivo.";
+                echo "Hubo un error al subir el cv.";
             }
         } else {
-            echo "El tipo de archivo no está permitido.";
+            echo "El tipo de cv no está permitido.";
         }
     } else {
-        echo "No se ha seleccionado ningún archivo o hubo un error en la subida.";
+        echo "No se ha seleccionado ningún cv o hubo un error en la subida.";
     }
 }
 
