@@ -269,6 +269,14 @@ background-position: 0 0,13px 13px;
     overflow: hidden;
     
 }
+.knowledge2{
+    background-color: #e5e5f7;
+background-image:  radial-gradient(#003513 0.65px, transparent 0.65px), radial-gradient(#003513 0.65px, #e5e5f7 0.65px);
+background-size: 24px 24px;
+background-position: 0 0,13px 13px;
+    overflow: hidden;
+    
+}
 
 .knowledge__container{
     display: grid;
@@ -291,6 +299,44 @@ background-position: 0 0,13px 13px;
     width: 100%;
     display: block;
 }
+
+/* VALORES */
+
+#valores {
+    text-align: center;
+    padding: 50px;
+}
+
+.valores-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.valor {
+    max-width: 200px;
+    text-align: center;
+}
+
+.valor-imagen {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.valor h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.valor p {
+    font-size: 14px;
+    margin-top: 5px;
+    color: #555;
+}
+
 
 /* Price */
 
