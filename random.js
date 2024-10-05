@@ -15,7 +15,7 @@ function randomizePattern() {
         imageDiv.classList.add('image-pattern');
         
         // Tamaño aleatorio entre 20px y 50px
-        const randomSize = getRandomInt(20, 50);
+        const randomSize = getRandomInt(15, 35);
         imageDiv.style.width = `${randomSize}px`;
         imageDiv.style.height = `${randomSize}px`;
         
