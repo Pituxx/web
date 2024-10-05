@@ -269,14 +269,28 @@ background-position: 0 0,13px 13px;
     overflow: hidden;
     
 }
-.knowledge2{
+.knowledge2 { 
     background-color: #e5e5f7;
-background-image:  radial-gradient(#003513 0.65px, transparent 0.65px), radial-gradient(#003513 0.65px, #e5e5f7 0.65px);
-background-size: 24px 24px;
-background-position: 0 0,13px 13px;
+    background-image:  radial-gradient(#003513 0.65px, transparent 0.65px), radial-gradient(#003513 0.65px, #e5e5f7 0.65px);
+    background-size: 24px 24px;
+    background-position: 0 0, 13px 13px;
     overflow: hidden;
-    
+    position: relative; /* Necesario para posicionamiento absoluto de los hijos */
 }
+
+.image-pattern {
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1; /* Las imágenes del patrón estarán en una capa inferior */
+}
+
+.content {
+    position: relative;
+    z-index: 2; /* Los textos e imágenes se colocarán sobre el patrón */
+    padding: 20px; /* Ajustar según el diseño que desees */
+}
+
 
 .knowledge__container{
     display: grid;
