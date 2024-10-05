@@ -271,7 +271,7 @@ background-position: 0 0,13px 13px;
 }
 .knowledge2 { 
     background-color: #e5e5f7;
-    background-image:  radial-gradient(#003513 0.65px, transparent 0.65px), radial-gradient(#003513 0.65px, #e5e5f7 0.65px);
+    background-image:  radial-gradient(#02962a31 0.65px, #e5e5f7 0.65px);
     background-size: 24px 24px;
     background-position: 0 0, 13px 13px;
     overflow: hidden;
