@@ -38,6 +38,26 @@
             gtag('config', 'AW-16712125961');
         </script>
 
+        <!-- Event snippet for Enviar formulario de clientes potenciales conversion page
+        In your html page, add the snippet and call gtag_report_conversion when someone
+        clicks on the chosen link or button. -->
+        <script>
+            function gtag_report_conversion(url) {
+                var callback = function () {
+                    if (typeof(url) != 'undefined') {
+                        window.location = url;
+                    }
+                };
+                gtag('event', 'conversion', {
+                    'send_to': 'AW-16712125961/RStTCNu32d0ZEImc-6A-',
+                    'value': 1.0,
+                    'currency': 'CLP',
+                    'event_callback': callback
+                });
+                return false;
+            }
+        </script>
+
     </head>
     <body>
         <header class="hero3">
@@ -250,25 +270,5 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.j
 integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
 crossorigin="anonymous"></script>
 <script src="random.js"></script>
-<!-- Event snippet for Enviar formulario de clientes potenciales conversion page
-In your html page, add the snippet and call gtag_report_conversion when someone
-clicks on the chosen link or button. -->
-<script>
-function gtag_report_conversion(url) {
-var callback = function () {
-    if (typeof(url) != 'undefined') {
-        window.location = url;
-    }
-};
-gtag('event', 'conversion', {
-    'send_to': 'AW-16712125961/RStTCNu32d0ZEImc-6A-',
-    'value': 1.0,
-    'currency': 'CLP',
-    'event_callback': callback
-});
-return false;
-}
-</script>
-
 </body>
 </html>
